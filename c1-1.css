@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden !important;
+}
+
+.image-container {
+  position: relative;   /* 글을 이 안에서 절대 위치로 잡기 위해 필요 */
+  display: inline-block;
+  width: 100%;         /* 사진 크기에 맞게 조정 */
+  height: auto;
+}
+
+/* 전체 화면에 사진을 딱 고정 */
+  .window-area {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;   /* 여백 색깔 보정 */
+}
+
+
+/* 사진 고정 */
+.window-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+.text-overlay {
+  position: absolute;      /* 사진 위에 올리기 */
+  top: 18%;                /* 사진 안에서 위쪽 위치 */
+  left: 20%;               /* 사진 안에서 왼쪽 위치 */
+  width: 80%;              /* 글 영역 넓이 */
+  color: black;
+  z-index: 5;              /* 타일보다는 아래, hit-area보다 위 */
+  pointer-events: none;    /* 글이 클릭 방해 안함 */
+  
+  text-align: left;        /* 글 정렬: left, center, right */
+  white-space: pre-line;   /* 줄바꿈 유지 */
+}
+
+
+.text-overlay p {
+  font-size: 1.2vw;
+  margin: 0;
+  line-height: 0.5;
+}
