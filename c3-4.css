@@ -37,10 +37,10 @@ html, body {
 
 .text-overlay {
   position: absolute;    
-  top: 15%;             
-  left: 20%;              
+  top: 50%;             
+  left: 23%;              
   width: 80%;             
-  color: black;
+  color: white;
   z-index: 5;             
   pointer-events: none;    
   

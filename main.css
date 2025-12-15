@@ -7,29 +7,188 @@ html, body {
 }
 
 .image-container {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-  overflow: hidden;
+  position: relative;   
+   width: 100%;
+  height: 100%;
 }
 
 .main-img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  width: 100%;  
+  height: auto;
   display: block;
-  vertical-align: top;
 }
+
+.hover-img {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  filter: blur(3px);
+  transform: scale(1.02);
+}
+
+.area1:hover ~ .hover1 { opacity: 1; }
+.area2:hover ~ .hover2 { opacity: 1; }
+.area3:hover ~ .hover3 { opacity: 1; }
+.area4:hover ~ .hover4 { opacity: 1; }
+.area5:hover ~ .hover5 { opacity: 1; }
+.area6:hover ~ .hover6 { opacity: 1; }
 
 .hit-area {
   position: absolute;
-  top: 30%;      /* 사진에서 클릭하고 싶은 위치 */
-  left: 0%;
-  width: 33%;  /* 영역 크기 */
-  height: 35%;
-  cursor: pointer;
-   /*background: rgba(255,0,0,0.2);*/
+  display: block;
+  z-index: 10; 
 }
 
+.hover1 {
+  top: 16.5%;
+  left: 0%;
+  width: 33%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.hover2 {
+  top: 16.5%;
+  left: 33%;
+  width: 34%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.hover3 {
+  top: 16.5%;
+  left: 67%;
+  width: 33%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.hover4 {
+  top: 52%;
+  left: 0%;
+  width: 33%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.hover5 {
+  top: 52%;
+  left: 33%;
+  width: 34%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.hover6 {
+  top: 52%;
+  left: 67%;
+  width: 34%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.area1 {
+  top: 16.5%;
+  left: 0%;
+  width: 33%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.area2 {
+  top: 16.5%;
+  left: 33%;
+  width: 34%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.area3 {
+  top: 16.5%;
+  left: 67%;
+  width: 33%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.area4 {
+  top: 52%;
+  left: 0%;
+  width: 33%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.area5 {
+  top: 52%;
+  left: 33%;
+  width: 34%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+.area6 {
+  top: 52%;
+  left: 67%;
+  width: 34%;
+  height: 35%;
+  /*background: rgba(255,0,0,0.2);*/
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    height: auto;
+    overflow-y: auto;     
+  }
+
+  .area1,
+  .hover1 {
+    top: 8%;
+    left: 21%;
+    width: 58%;
+    height: 14%;
+    /*background: rgba(255,0,0,0.2);*/
+  }
+  .area2,
+  .hover2 {
+    top: 22%;
+    left: 20.5%;
+    width: 59%;
+    height: 14%;
+    /*background: rgba(255,0,0,0.2);*/
+  }
+  .area3,
+  .hover3 {
+    top: 36.3%;
+    left: 20.5%;
+    width: 59%;
+    height: 14%;
+    /*background: rgba(255,0,0,0.2);*/
+  }
+  .area4,
+  .hover4 {
+    top: 50.3%;
+    left: 20.5%;
+    width: 58.8%;
+    height: 14.8%;
+    /*background: rgba(255,0,0,0.2);*/
+  }
+  .area5,
+  .hover5 {
+    top: 64.8%;
+    left: 20.8%;
+    width: 58.5%;
+    height: 13.8%;
+    /*background: rgba(255,0,0,0.2);*/
+  }
+  .area6,
+  .hover6 {
+    top: 78.6%;
+    left: 21%;
+    width: 58.5%;
+    height: 14.1%;
+    /*background: rgba(255,0,0,0.2);*/
+  }
+
+}

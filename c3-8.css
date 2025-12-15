@@ -6,14 +6,14 @@ html, body {
 }
 
 .image-container {
-  position: relative;   
+  position: relative; 
   display: inline-block;
-  width: 100%;         
+  width: 100%;        
   height: auto;
 }
 
 
-.window-area {
+  .window-area {
   position: fixed;
   inset: 0;
   overflow: hidden;
@@ -36,16 +36,16 @@ html, body {
 
 
 .text-overlay {
-  position: absolute;    
-  top: 15%;             
-  left: 20%;              
+  position: absolute;      
+  top: 25%;                
+  left: 57%;               
   width: 80%;             
   color: black;
-  z-index: 5;             
+  z-index: 5;              
   pointer-events: none;    
   
-  text-align: left;       
-  white-space: pre-line;  
+  text-align: left;        
+  white-space: pre-line;   
 }
 
 

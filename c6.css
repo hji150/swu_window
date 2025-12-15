@@ -36,36 +36,18 @@ html, body {
 }
 
 .area1 {
-  top: 4.5%;
-  left: 6%;
-  width: 13%;
-  height: 92.5%;
+  top: 0%;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  /*background: rgba(255,0,0,0.2);*/
 }
 
 .area2 {
-  top: 4.5%;
-  left: 21.5%;
-  width: 20.5%;
-  height: 92%;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  /*background: rgba(255,0,0,0.2);*/
 }
 
-.area3 {
-  top: 5%;
-  left: 45%;
-  width: 10.94%;
-  height: 90.09%;
-}
-
-.area4 {
-  top: 4.5%;
-  right: 21%;
-  width: 20%;
-  height: 92%;
-}
-
-.area5 {
-  top: 5%;
-  right: 0%;
-  width: 18%;
-  height: 90%;
-}

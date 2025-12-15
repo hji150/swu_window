@@ -13,7 +13,7 @@ html, body {
 }
 
 
-.window-area {
+  .window-area {
   position: fixed;
   inset: 0;
   overflow: hidden;
@@ -34,18 +34,17 @@ html, body {
   object-fit: contain;
 }
 
-
 .text-overlay {
-  position: absolute;    
-  top: 15%;             
-  left: 20%;              
-  width: 80%;             
+  position: absolute;      
+  top: 3%;                
+  left: 22%;             
+  width: 80%;              
   color: black;
-  z-index: 5;             
+  z-index: 5;              
   pointer-events: none;    
   
-  text-align: left;       
-  white-space: pre-line;  
+  text-align: left;        
+  white-space: pre-line;   
 }
 
 
@@ -57,7 +56,7 @@ html, body {
 
 @media (max-width: 768px) {
   .text-overlay p {
-    font-size: 1.7vw;
+    font-size: 2.0vw;
     line-height: 1.2;
   }
 }
