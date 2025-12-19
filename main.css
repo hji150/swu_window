@@ -7,14 +7,14 @@ html, body {
 }
 
 .image-container {
-  position: relative;   
-   width: 100%;
-  height: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;   
 }
 
+
 .main-img {
-  width: 100%;  
-  height: auto;
+  position: absolute;  
   display: block;
 }
 
@@ -38,6 +38,48 @@ html, body {
   position: absolute;
   display: block;
   z-index: 10; 
+}
+
+.main-img1 {
+  top: 16.5%;
+  left: 0%;
+  width: 33%;
+  height: 35%;
+}
+
+.main-img2 {
+  top: 16.5%;
+  left: 33%;
+  width: 34%;
+  height: 35%;
+}
+
+.main-img3 {
+  top: 16.5%;
+  left: 67%;
+  width: 33%;
+  height: 35%;
+}
+
+.main-img4 {
+  top: 52%;
+  left: 0%;
+  width: 33%;
+  height: 35%;
+}
+
+.main-img5 {
+  top: 52%;
+  left: 33%;
+  width: 34%;
+  height: 35%;
+}
+
+.main-img6 {
+  top: 52%;
+  left: 67%;
+  width: 34%;
+  height: 35%;
 }
 
 .hover1 {
@@ -143,7 +185,8 @@ html, body {
   }
 
   .area1,
-  .hover1 {
+  .hover1,
+  .main-img1 {
     top: 8%;
     left: 21%;
     width: 58%;
@@ -151,7 +194,8 @@ html, body {
     /*background: rgba(255,0,0,0.2);*/
   }
   .area2,
-  .hover2 {
+  .hover2,
+  .main-img2 {
     top: 22%;
     left: 20.5%;
     width: 59%;
@@ -159,7 +203,8 @@ html, body {
     /*background: rgba(255,0,0,0.2);*/
   }
   .area3,
-  .hover3 {
+  .hover3,
+  .main-img3 {
     top: 36.3%;
     left: 20.5%;
     width: 59%;
@@ -167,7 +212,8 @@ html, body {
     /*background: rgba(255,0,0,0.2);*/
   }
   .area4,
-  .hover4 {
+  .hover4,
+  .main-img4 {
     top: 50.3%;
     left: 20.5%;
     width: 58.8%;
@@ -175,7 +221,8 @@ html, body {
     /*background: rgba(255,0,0,0.2);*/
   }
   .area5,
-  .hover5 {
+  .hover5,
+  .main-img5 {
     top: 64.8%;
     left: 20.8%;
     width: 58.5%;
@@ -183,7 +230,8 @@ html, body {
     /*background: rgba(255,0,0,0.2);*/
   }
   .area6,
-  .hover6 {
+  .hover6,
+  .main-img6 {
     top: 78.6%;
     left: 21%;
     width: 58.5%;

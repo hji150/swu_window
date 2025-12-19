@@ -37,8 +37,8 @@ html, body {
 
 .text-overlay {
   position: absolute;    
-  top: 10%;             
-  left: 22%;              
+  top: 60%;             
+  left: 16%;              
   width: 80%;             
   color: white;
   z-index: 5;             

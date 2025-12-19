@@ -38,15 +38,15 @@ html, body {
 
 .text-overlay {
   position: absolute;      
-  top: 3%;                
-  left: 65%;               
-  width: 80%;            
+  top: 7%;                
+  left: 22%;             
+  width: 80%;              
   color: black;
   z-index: 5;              
-  pointer-events: none;   
+  pointer-events: none;    
   
-  text-align: left;      
-  white-space: pre-line; 
+  text-align: left;        
+  white-space: pre-line;   
 }
 
 
